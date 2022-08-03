@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --background: #f2eae2;
+  --primary: #3d8168;
+  --primary-hover: #1a4032;
+  --text: #6c7289;
+  --text-dark: 1c232b;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  background: var(--background);
+}
+
+.main-container {
+  
+  position: absolute;
+  display: flex;
+  margin: auto;
+  max-width: 600px;
+  height: 450px;
+  background: #fff;
+  top: 25%;
+  border-radius: 10px;
+}
+
+img {
+  height: 450px;
+  border-radius: 10px 0 0 10px;
+}
+
+.content-container {
+  margin: 20px;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  color: var(--text-dark)
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--text);
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.3rem;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+}
+
+.sale-price {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  color: var(--primary)
+}
+
+.msrp {
+  margin-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  color: var(--text);
+  text-decoration: line-through;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  width: 246px;
+  height: 48px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: var(--primary-hover);
+  cursor: pointer;
+}
+
+button img {
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+}
+
+.showHide {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .desktop {
+    display: none;
+  }
+  
+  .main-container {
+    flex-direction: column;
+    width: 343px;
+    height: 611px;
+    top: 15%;    
+  }
+
+  .showHide {
+    display: block;
+  }
+
+  img {
+    border-radius: 10px 10px 0 0;
+    height: 240px;
+  }
+
+  .content-container {
+    margin-top: 0;
+  }
+
+  button {
+    width: 320px;
+  }
+
+}
